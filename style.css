@@ -1,0 +1,166 @@
+body {
+    background-color: #3d1464;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+
+.todo {
+    margin-top: 100px;
+    background-color: steelblue;
+    border-radius: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 75px;
+    font-weight: 300;
+}
+
+.todo h2 {
+    margin: 0;
+}
+
+.todo p {
+    font-style: italic;
+    color: rgb(228, 153, 153);
+    margin: 5px 0;
+}
+
+.todo ol {
+    margin: 20px 0;
+}
+
+.todo ol li {
+    margin: 5px 0;
+    padding: 3px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+.todo ol li:nth-child(even) {
+    background: #ddd;
+}
+
+.todo .completed {
+    text-decoration: line-through;
+    color: #666;
+}
+
+.todo .button-control {
+    margin: 10px 2px;
+    padding: 5px 20px;
+    border-radius: 15px;
+    background-color: #0093D5;
+    border: none;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    font-size: small;
+    box-shadow: coral 5px 5px 5px;
+}
+
+.todo .button-control:hover {
+    cursor: pointer;
+    opacity: 0.75;
+}
+
+.todo input {
+    padding: 3px 6px;
+}
+
+.todo form {
+    display: inline-block;
+}
+
+#btn {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.todo #clear-completed-button {
+    background-color: #0a0a0a;
+}
+
+.todo #empty-button {
+    background-color: #ec1f26;
+}
+
+.todo #save-button {
+    background-color: #49B749;
+}
+.todo #clear-completed-button:hover{
+    background-color: chartreuse;
+    font-size: medium;
+    transform: translate(-3px,-3px);
+    transition: 0.3s;
+}
+.todo #empty-button:hover{
+    background-color: chartreuse;
+    font-size: medium;
+    transform: translate(-3px,-3px);
+    transition: 0.3s;
+}
+.todo #save-button:hover{
+    background-color: chartreuse;
+    font-size: medium;
+    transform: translate(-3px,-3px);
+    transition: 0.3s;
+}
+.todo #add-button:hover{
+    background-color: chartreuse;
+    font-size: medium;
+    transform: translate(-3px,-3px);
+    transition: 0.3s;
+}
+.todo #clear-completed-button:active{
+    transform: translate(5px,5px);
+    box-shadow: gray 5px 5px 3px;
+    transition: 0.2s;
+}
+.todo #empty-button:active{
+    transform: translate(5px,5px);
+    box-shadow: gray 5px 5px 3px;
+    transition: 0.2s;
+}
+.todo #save-button:active{
+    transform: translate(5px,5px);
+    box-shadow: gray 5px 5px 3px;
+    transition: 0.2s;
+}
+.todo #add-button:active{
+    transform: translate(5px,5px);
+    box-shadow: gray 5px 5px 3px;
+    transition: 0.2s;
+}
+#ar:hover{
+    background-color: rgb(27, 3, 41);
+    font-size: large;
+    box-shadow: mediumvioletred 10px 10px 10px;
+    transform: translate(-3px,-3px);
+    transition: 0.3s;
+}
+
+@media only screen and (min-width: 1400px) {
+    .todo {
+        width: 50%;
+    }
+
+    .todo input {
+        width: 600px;
+    }
+    
+}
+
+@media only screen and (max-width: 1399px) and (min-width: 750px) {
+    .todo {
+        width: 75%;
+    }
+
+    .todo input {
+        width: 400px;
+    }
+}
